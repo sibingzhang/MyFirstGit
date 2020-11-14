@@ -1,0 +1,17 @@
+测试暂存区操作
+git log查看日志
+git log -5 --pretty=oneline简化日志输出
+
+git reset HEAD(撤销缓存区)
+git reset --hard HEAD^表示回退到上一个版本
+git reset --hard HEAD~1 表示回退几个版本
+又想回来的话：git reset --hard 版本号
+
+1、git init初始化本地仓库
+2、git add添加到缓存区
+3、git commit提交到初始化好的那个本地仓库里面
+4、git status查看状态
+5、git log查看日志
+
+如果回来的时候，命令行被清空了看不到被删除的版本号---用git log 命令也看不到了，怎么办？：
+git reflog
